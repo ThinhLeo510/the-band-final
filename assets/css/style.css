@@ -1,0 +1,517 @@
+/* reset css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.clear {
+  clear: both;
+}
+
+.text_white {
+  color: #fff;
+}
+
+.font_size_25 {
+  font-size: 25px;
+}
+
+.mr_10 {
+  margin-right: 10px;
+}
+
+.row {
+  margin-left: -8px;
+  margin-right: -8px; 
+}
+
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.one_col {
+  width: 100%;
+}
+
+.two_col {
+  width: 50%;
+}
+
+.three_col {
+  width: 33.3333%;
+}
+
+.mt_10px {
+  margin-top: 10px;
+}
+
+
+.mt-16px{
+  margin-top: 16px;
+}
+
+
+
+
+/* header */
+#header {
+  height: 46px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav > li {
+  display: inline-block;
+  position: relative;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  display: block;
+  padding: 0 15px;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+  background-color: #ccc !important;
+  color: black !important ;
+}
+
+#nav .subnav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  list-style-type: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  min-width: 160px;
+}
+
+#nav .subnav li a {
+  color: #000;
+  line-height: 38px;
+}
+
+.btn_search {
+  float: right;
+  line-height: 46px;
+  cursor: pointer;
+  
+}
+
+.menu-mobile-header{
+  display: none;
+  float: right;
+  line-height: 46px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.menu-mobile-header:hover{
+  background-color: #ccc;
+}
+
+.menu-mobile-header:hover .icon-menu{
+  color: #000;
+}
+
+.btn_search:hover {
+  background-color: #f44336;
+}
+
+.icon-menu,
+.icon_search {
+  color: #fff;
+  padding: 0 20px;
+}
+
+/* ===================================================*/
+#slider {
+  padding-top: 50%;
+  margin-top: 46px;
+  background: url("../image/slider.jpg") no-repeat top center / cover;
+  position: relative;
+}
+
+#slider .text_wrapper {
+  position: absolute;
+  bottom: 48px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+#slider .text_wrapper .slider_title {
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+#slider .text_wrapper .slider_subtitle {
+  font-weight: 700;
+  text-shadow:  0 0 1px #000;
+}
+
+/* ===================================================== */
+/* the band */
+#content .content_section {
+  width: 800px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 74px 16px;
+}
+
+.content_section .content_title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.content_section .content_subtitle {
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+  opacity: 0.6;
+  margin-top: 25px;
+}
+
+/* the band */
+#the_band .the_band_paragraph {
+  margin-top: 25px;
+  text-align: justify;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#the_band .member_list {
+  margin-top: 48px;
+  margin-bottom: 48px;
+
+}
+
+#the_band .member_item {
+  text-align: center;
+}
+
+
+#the_band .member_item .member_name {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#the_band .member_item .member_image {
+  width: 143px;
+  border-radius: 4px;
+
+}
+
+/* ======================================================================= */
+/* tour dates */
+#content .dark_background {
+  background-color: #000;
+}
+
+#tour_dates .tour_tickets {
+  background: #fff;
+  color: #000;
+  margin-top: 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  
+}
+
+#tour_dates .tour_tickets > li {
+  padding: 8px 10px;
+  list-style-type: none;
+  color: rgb(131, 126, 126);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#tour_dates .sold_out {
+  margin-left: 10px;
+  padding: 3px 6px;
+  border-radius: 5px;
+  background: #f44336;
+  color: #fff;
+}
+
+#tour_dates .ticket_num {
+  float: right;
+  width: 20px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+#tour_dates .tour_places {
+  margin: 19px -8px 48px;
+}
+
+.tour_places .tour_item {
+  float: left;
+  width: 33.3333%;
+  padding: 0 8px;
+}
+
+.tour_places .tour_item .place_image {
+  width: 100%;
+  display: block;
+  border-radius: 5px 5px 0 0;
+}
+
+.tour_places .tour_item .place_image:hover {
+  opacity: 0.6;
+}
+
+.tour_places .tour_item .place_body {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 0 0 5px 5px;
+  font-size: 15px;
+}
+
+.tour_item .place_body .place_time {
+  padding: 15px 0;
+  opacity: 0.7;
+}
+
+.tour_item .place_body .place_desc {
+  line-height: 1.4;
+}
+
+.tour_item .place_body .btn_buy_tickets {
+  padding: 10px 16px;
+  background-color: #000;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.tour_item .place_body .btn_buy_tickets:hover {
+  background: #ccc;
+  color: #000;
+}
+
+/* =================================================================== */
+/* contact */
+
+#content .contact_content {
+  margin-top: 48px;
+  font-size: 15px;
+  margin-bottom: 38px;
+}
+
+.contact_content .contact_infor i[class*="ti-"] {
+  width: 30px;
+  display: inline-block;
+}
+
+.contact_content .contact_infor {
+  font-size: 18px;
+}
+
+.contact_form .btn_send_contact {
+  float: right;
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.contact_form .btn_send_contact:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.input_contact {
+  padding: 10px 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* =================================================================== */
+/* map */
+#map img {
+  width: 100%;
+}
+/* =================================================================== */
+/* footer */
+#footer {
+  margin-bottom: 50px;
+  opacity: 0.6;
+}
+
+#footer .footer_icon {
+  padding-top: 70px;
+  text-align: center;
+}
+
+#footer .footer_icon a {
+  padding: 0 4px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #000;
+}
+
+#footer .footer_icon a:hover {
+  opacity: 0.6;
+}
+
+#footer .footer_src {
+  text-align: center;
+  padding: 23px 0;
+}
+
+#footer .footer_src a {
+  color: #000;
+}
+/* =================================================================== */
+/* modal buy tickets */
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_open {
+  display: flex;
+}
+
+.modal .modal_container {
+  width: 890px;
+  min-height: 200px;
+  background: #fff;
+  position: relative;
+  max-width: calc(100% - 32px);
+  animation: animationShowModal ease 0.5s;
+}
+
+.modal_container .modal_close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  color: #fff;
+}
+
+.modal_container .modal_close:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.modal_container .modal_header {
+  font-size: 30px;
+  background-color: #009688;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+.modal_container .modal_body {
+  padding: 0 16px;
+  font-size: 15px;
+}
+
+.modal_body .modal_label {
+  display: inline-block;
+  padding: 20px 0 0;
+}
+
+.modal_body .modal_input {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px 8px;
+  border: 1px solid #ccc;
+}
+
+.modal_body .btn_pay {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #009688;
+  margin-top: 15px;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.modal_body .btn_pay:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.modal_footer {
+  margin: 20px 16px;
+  text-align: right;
+}
+
+/* animation modal show */
+@keyframes animationShowModal {
+  from {
+    opacity: 0.6;
+    transform: translateY(-130px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
